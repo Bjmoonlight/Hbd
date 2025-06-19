@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Feliz Cumpleaños Feloo ₊˚⊹♡! 💌</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #ffebee;
+      color: #d32f2f;
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur835.cur'), auto;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .music-control {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .music-control:hover {
+      background: rgba(255, 255, 255, 0.9);
+    }
+    .screen {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px 20px;
+      margin: auto;
+    }
+    .screen h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .screen p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+    }
+    .button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .button::after {
+      content: "✨";
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      font-size: 1.2em;
+      animation: twinkle 1.5s infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+    .button:hover {
+      background: #ff4757;
+      transform: scale(1.05);
+    }
+    #screen2, #screen3 {
+      display: none;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .letter-container {
+      background: url('https://imgur.com/RKPKjNP.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .letter-content {
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    .letter-content h2 {
+      text-align: center;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://voca.ro/1jVM0EYXYR3u.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-control" onclick="toggleMusic()">
+    <span id="musicIcon">🔇</span>
+  </div>
+
+  <div class="screen" id="screen1">
+    <h1>¡Feliz Cumpleaños Feloo  ≽^•⩊•^≼ ₊˚⊹♡! 💖</h1>
+    <p>He preparado algo muy especial para ti... ¿listo para descubrirlo? 🎁</p>
+    <button class="button" onclick="showLetter()">Ver sorpresa</button>
+  </div>
+
+  <div id="screen2">
+    <div class="letter-container">
+      <div class="letter-content">
+        <h2>Para Felipe...</h2>
+        <p>Nos conocimos hace ya más de 12 años, cuando ambos éramos apenas unos adolescentes, tú en Santiago y yo en La Serena. Aunque la distancia era grande, nuestras ganas de compartir y conocernos fueron más fuertes. En 2015, nos vimos por primera vez, y aún recuerdo el momento en que, venciendo mis nervios, fui yo quien te dio ese primer beso.</p>
+        <p>Luego, en 2016, fuiste tú quien vino a verme. Fue un encuentro breve, pero lleno de emociones, de intimidad tímida y de una conexión profunda. A pesar de la distancia y de la juventud, yo te elegí como alguien muy especial. </p>
+        <p>Con el paso del tiempo, nuestras vidas tomaron caminos distintos. Tú entraste a la universidad, yo inicié una nueva relación, y aunque eso nos distanció, nunca rompimos del todo el vínculo. Años después, volviste a aparecer cuando más te necesitaba, con palabras que me sostenían en medio de tormentas. Me escuchaste, me acompañaste, fuiste mi refugio silencioso.</p>
+        <p>En 2024 nos reencontramos en un concierto, y ese abrazo tuyo me hizo sentir como en casa. Y desde ahí, volviste a estar. En las buenas, en las malas. Cuando me despidieron, me consolaste desde lejos, incluso con chocolates. Cuando mi mundo se quebraba, tú estabas ahí, siendo luz en medio de mi oscuridad.</p>
+        <p>Volvimos a vernos en marzo de 2025 y, aunque fue poco tiempo, sentí que nunca es suficiente contigo. Me haces volver a sentir como esa niña de hace años, con mariposas en la panza y ojos brillantes. </p>
+        <p>Hoy no estamos en una relación formal, pero quiero que sepas que te quiero mucho, que te valoro, te admiro y agradezco al destino por haberte traído de vuelta a mi vida. Eres una persona increíble, y deseo que sigas estando a mi lado por muchos años más. 💖</p>
+        <p>Con todo mi cariño,</p>
+        <p>Bárbara 💌</p>
+        <button class="button" onclick="showPlaylist()">Siguiente sorpresa 🎶</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="screen3">
+    <h1>¡Tengo otra sorpresa! 🎁</h1>
+    <p>Una playlist con canciones que me recuerdan a ti (◍•ᴗ•◍)♡ ✧*。...</p>
+    <button class="button" onclick="window.open('https://open.spotify.com/playlist/1bHDdO7o6zpFxuJjyoTatE?si=ZQLdVYd-ShKnfTnXhr2bMQ&pi=m5P4ok1PRY2Or','_blank')">🎵 Escuchar playlist</button>
+    <button class="button" onclick="restart()">❤️ Volver al inicio</button>
+  </div>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+    const musicIcon = document.getElementById("musicIcon");
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play().then(() => musicIcon.textContent = "🔊")
+          .catch(() => console.log("Música bloqueada por el navegador"));
+      } else {
+        music.pause();
+        musicIcon.textContent = "🔇";
+      }
+    }
+
+    function showLetter() {
+      document.getElementById("screen1").style.display = "none";
+      document.getElementById("screen2").style.display = "block";
+    }
+
+    function showPlaylist() {
+      document.getElementById("screen2").style.display = "none";
+      document.getElementById("screen3").style.display = "block";
+    }
+
+    function restart() {
+      document.getElementById("screen3").style.display = "none";
+      document.getElementById("screen1").style.display = "block";
+    }
+  </script>
+</body>
+</html>
